@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self isPalindrome:@"Dagon"];
+    [self isPalindrome:@"Racecar"];
     return YES;
 }
 
