@@ -17,15 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self isPalindrome:@"Racecar"];
+    [self isPalindrome:@"Dagon"];
     return YES;
 }
 
 -(BOOL)isPalindrome:(NSString *)string {
     BOOL yesNo = NO;
     NSString *result = @"";
-    for (NSUInteger i = [string length]; i > 0; i--) {
-        unichar character = [[string lowercaseString]characterAtIndex:i-1];
+    for (NSUInteger i = string.length; i > 0; i--) {
+        unichar character = [string.lowercaseString characterAtIndex:i-1];
         result = [result stringByAppendingFormat:@"%c", character];
         if ([string isEqualToString:result]) {
             yesNo = YES;
