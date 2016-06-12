@@ -24,13 +24,13 @@
 -(BOOL)isPalindrome:(NSString *)string {
     BOOL yesNo = NO;
     NSString *result = @"";
-        for (NSUInteger i = [string length]; i > 0; i--) {
-            unichar character = [[string lowercaseString]characterAtIndex:i-1];
-            result = [result stringByAppendingFormat:@"%c", character];
-            if ([string isEqualToString:result]) {
-                yesNo = YES;
-            }
+    for (NSUInteger i = [string length]; i > 0; i--) {
+        unichar character = [[string lowercaseString]characterAtIndex:i-1];
+        result = [result stringByAppendingFormat:@"%c", character];
+        if ([string isEqualToString:result]) {
+            yesNo = YES;
         }
+    }
     return yesNo;
 }
 
